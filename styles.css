@@ -1,0 +1,96 @@
+* {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+}
+
+body {
+	height: 100vh;
+	margin: 0;
+}
+
+button {
+	border: none;
+	cursor: pointer;
+	font-size: 2.5em;
+	border-radius: 5px;
+	vertical-align: middle;
+}
+
+sub {
+	vertical-align: sub;
+	font-size: 0.5em;
+}
+
+p {
+	margin: 0;
+}
+
+.main-container {
+	width: 70%;
+	height: 100%;
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: repeat(3, 1fr);
+	align-items: center;
+	justify-items: center;
+	margin: 0 auto;
+}
+
+.note-display p {
+	font-size: 12em;
+	font-weight: 400;
+}
+
+.greeting p {
+	font-size: 5em;
+}
+
+.note-button__selected {
+	background-color: red;
+}
+
+.control-buttons {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 20px;
+	grid-row: 2/2;
+	grid-column: 1/1;
+	width: 100%;
+}
+
+.start-button {
+	background-color: #00d1b2;
+}
+
+.control-buttons button {
+	height: 80px;
+	width: 100%;
+	border-radius: 2px;
+}
+
+
+
+.note-selection {
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+}
+
+.note-selection div {
+	display: flex;
+	flex-direction: row;
+	gap: 10px;
+	justify-content: center;
+}
+
+.note-button {
+	height: 70px;
+	width: 100px;
+}
+
+.more-octaves-button {
+	margin-top: 1em;
+	height: 70px;
+}

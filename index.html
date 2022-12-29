@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Note Generator</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100&display=swap" rel="stylesheet">
+	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/tone/14.8.49/Tone.js"></script> -->
+	<script src="Tone.js"></script>
+</head>
+<body>
+	<div class="main-container">
+		<div class="note-display greeting">
+			<p>
+				Select notes and press Start!
+			</p>
+		</div>
+		<div class="control-buttons">
+			<button class="start-button">Start</button>
+			<button class="stop-button">Stop</button>
+		</div>
+		<div class="note-selection">
+			<div class="black-keys">
+				<button data-octave="4"class="note-button"><div>C#</div></button>
+				<button data-octave="4"class="note-button"><div>D#</div></button>
+				<button data-octave=""class="note-button" style="visibility: hidden;"><div>C#</div></button>
+				<button data-octave="4"class="note-button"><div>F#</div></button>
+				<button data-octave="4"class="note-button"><div>G#</div></button>
+				<button data-octave="4"class="note-button"><div>A#</div></button>
+			</div>
+			<div class="white-keys">
+				<button data-octave="4" class="note-button"><div>C</div></button>
+				<button data-octave="4"class="note-button"><div>D</div></button>
+				<button data-octave="4"class="note-button"><div>E</div></button>
+				<button data-octave="4"class="note-button"><div>F</div></button>
+				<button data-octave="4"class="note-button"><div>G</div></button>
+				<button data-octave="4"class="note-button"><div>A</div></button>
+				<button data-octave="4"class="note-button"><div>B</div></button>
+			</div>
+			<!-- <button class="more-octaves-button">
+				Click here to get more Octaves
+			</button> -->
+		</div>
+	</div>
+	<script src="script.js"></script>
+</body>
+</html>
