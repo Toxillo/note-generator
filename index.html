@@ -19,6 +19,20 @@
 		<div class="control-buttons">
 			<button class="start-button">Start</button>
 			<button class="stop-button">Stop</button>
+			<div class="bpm-slider">
+				<input type="range" id="bpm" name="bpm" min="0" max="10" step=1>
+				<div class="slider-info-container">
+					<div class="checkbox-container">
+						<label class="switch">
+							<input id="switch-input" type="checkbox">
+							<span class="slider round"></span>
+						</label>
+						<div id="switch-position">BPM</div>
+					</div>
+					<label id="bpm-label" for="BPM">BPM: 180</label>
+				</div>
+			</div>
+			<div class="error-message">Error</div>
 		</div>
 		<div class="note-selection">
 			<div class="black-keys">
